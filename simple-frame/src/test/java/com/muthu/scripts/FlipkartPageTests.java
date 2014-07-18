@@ -21,7 +21,7 @@ public class FlipkartPageTests {
 	public void testcase_001(){
 		
 		/**
-		 * This test case verifies login functionality
+		 * This test case verifies the login functionality
 		 * 
 		 * Valid email
 		 * Valid password
