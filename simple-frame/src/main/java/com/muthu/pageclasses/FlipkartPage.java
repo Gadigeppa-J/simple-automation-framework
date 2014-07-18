@@ -54,7 +54,7 @@ public class FlipkartPage {
 	/**
 	 * Define page methods here
 	 * 
-	 * These are the only fields that can be accessed by outside world
+	 * These are the only fields that can be accessed from outside world
 	 * These methods mimic user actions like clicking the login button.
 	 * 
 	 */
