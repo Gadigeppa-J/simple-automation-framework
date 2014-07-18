@@ -19,7 +19,7 @@ import com.muthu.frame.Driver;
  * 
  * Wrapper around WebElement
  * 
- * This makes your life easier. When you want to create object for this class you have pass the locatorKey
+ * This makes your life easier. When you want to create an object for this class, you have to pass the locatorKey
  * string defined in OR.properties and WebDriver object
  * 
  * locators in OR.properties will be defined in below format
@@ -31,11 +31,11 @@ import com.muthu.frame.Driver;
  * home.login.button=css::a[class='loginBtn']
  * 
  * 'by' part determines how to find the element in the page, either by id or css or xpath..etc
- * locator part the actual locator to be used
+ * locator part is the actual locator to be used
  * 
  * Based on locatorKey it will get the appropriate locator string from OR.properties and creates the webelement
  * 
- * It read  OR.properties from classpath so make sure to keep your OR.properties in classpath
+ * It reads  OR.properties from classpath, so make sure to keep your OR.properties in classpath
  *
  */
 public class HTMLElement implements WebElement{
@@ -117,13 +117,13 @@ public class HTMLElement implements WebElement{
 			int index = orLocatorString.indexOf("::");
 			
 			
-			// First determine the by strategy 
+			// First determine the 'by' strategy 
 			String byString = orLocatorString.substring(0, index).toLowerCase();
 			
 			// Next get the actual locator
 			String actualLocator = orLocatorString.substring(index+2).toLowerCase();
 			
-			// Now create By object based on by strategy
+			// Now create By object based on 'by' strategy
 			
 			switch (byString) {
 			
