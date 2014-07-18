@@ -47,8 +47,8 @@ public class LoginWindow {
 	/**
 	 * Define page methods here
 	 * 
-	 * These are the only field that can be accessed by outside world
-	 * These methods mimics user actions like clicking the login button..
+	 * These are the only fields that can be accessed from outside world
+	 * These methods mimic user actions like clicking the login button..
 	 * 
 	 */
 	
