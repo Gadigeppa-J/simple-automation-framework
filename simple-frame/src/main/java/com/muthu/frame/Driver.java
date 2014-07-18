@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 
- * This class takes care for initializing WebDriver based on the browser name
+ * This class takes care of initializing WebDriver based on the browser name
  *
  */
 public class Driver {
@@ -23,7 +23,7 @@ public class Driver {
 	 * I'm using slf4j logger and not log4j.
 	 * 
 	 */
-	private static Logger log = LoggerFactory.getLogger(Application.class); // pass the class name
+	private static Logger log = LoggerFactory.getLogger(Driver.class); // pass the class name
 
 	
 	private static WebDriver driver;
@@ -32,7 +32,7 @@ public class Driver {
 	 * initializes Webdriver based on the browser name.
 	 * 
 	 * This Webdriver object will be stored in the static variable so that 
-	 * it can be accessed by page object classes later.
+	 * it can be accessed by page objects later.
 	 * 
 	 */
 	
