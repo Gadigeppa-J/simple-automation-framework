@@ -54,8 +54,8 @@ public class FlipkartPage {
 	/**
 	 * Define page methods here
 	 * 
-	 * These are the only field that can be accessed by outside world
-	 * These methods mimics user actions like clicking the login button..
+	 * These are the only fields that can be accessed by outside world
+	 * These methods mimic user actions like clicking the login button.
 	 * 
 	 */
 
@@ -64,7 +64,7 @@ public class FlipkartPage {
 		// Determines if main page is opened
 		// returns 'true' if opened else 'false'
 
-		// We can check if page is opened by checking if Search textfield exists
+		// We can check if page is opened by verifying if Search textfield exists
 		if(isSearchFieldExists()){
 			return true;
 		}else{
@@ -79,9 +79,9 @@ public class FlipkartPage {
 	public LoginWindow clickLogin(){	
 
 		/**
-		 * This function appears to have too many line for just simple click functionality
+		 * This function appears to have too many lines of code for just simple click functionality
 		 * But in reality its just three line code.
-		 * Here I have just elaborated it for better understanding
+		 * Here I have elaborated it for better understanding
 		 */
 
 		// Click login button
@@ -94,7 +94,7 @@ public class FlipkartPage {
 		/**
 		 * When we click login button, Login window opens
 		 * So we have to make sure that login window is opened
-		 * and return the LoginWindow object back
+		 * and then return the LoginWindow object back
 		 * 
 		 */
 
@@ -104,7 +104,7 @@ public class FlipkartPage {
 		if(loginWindow.isWindowOpened()){
 
 			// if execution reaches here means Login window is opened
-			// so now we can return LoginWindow object
+			// so now we can return the LoginWindow object
 
 			return loginWindow; 
 		}else{
@@ -174,7 +174,7 @@ public class FlipkartPage {
 			clickLogout();
 			
 		}else{
-			log.info("Application is already logged out");
+			log.info("User is already logged out");
 		}
 		
 	}
