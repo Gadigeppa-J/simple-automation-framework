@@ -15,7 +15,7 @@ import com.muthu.pageclasses.LoginWindow;
  * 
  * This class takes care of initializing driver and launching the application.
  * 
- * It reads application.properties files and get the application url to be launched
+ * It reads application.properties file and gets the application url to be launched
  *
  */
 public class Application {
@@ -45,7 +45,7 @@ public class Application {
 		log.info("Navigating to url {}", url);
 		driver.get(url); // navigate to url
 		
-		// Once the application is launched you need check if application is really launched
+		// Once the application is launched, you need to check if application is really opened
 		FlipkartPage flipkartPage = new FlipkartPage();
 		
 		if(! flipkartPage.isPageOpened()){
@@ -60,7 +60,7 @@ public class Application {
 	/**
 	 * Closes the application.
 	 * 
-	 * It makes sure that the user is logged out before closing the application
+	 * this makes sure that the user is logged out before closing the application
 	 * 
 	 */
 	
